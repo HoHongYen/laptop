@@ -1,0 +1,214 @@
+
+
+:root {
+    --success-color: #269199;
+    --error-color: #e74c3c;
+  }
+  
+  /* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  } */
+
+  .register-login-section {
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    /* font-family: cursive; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .my-container h1 {
+    font-family: cursive;
+    font-style: none;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  :placeholder-shown {
+    font-style: none;
+  }
+  
+  .my-container {
+    width: 450px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(150deg, #41f0e8d6, yellow);
+    padding: 40px;
+  }
+
+  .my-container {
+    margin-top: -10px;
+  }
+  
+  .my-form-control {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+  }
+  
+  .my-form-control input, .my-form-control textarea {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+  }
+
+  /* .my-form-control textarea {
+    width: inherit;
+    border: none;
+    outline: none;
+    background: transparent;
+  } */
+  
+  .my-form-control span {
+    border-bottom: 3px solid var(--success-color); 
+    position: absolute;
+    left: 0;
+    top: 38px;
+    width: 0%;
+    transition: 0.5s;
+  }
+  
+  .my-form-control input:focus ~ span {
+    width: 100%;
+  }
+  
+  .my-form-control.error small {
+    color: var(--error-color);
+  }
+  
+  .my-form-control.error input {
+    border-bottom: 2px solid var(--error-color);
+  }
+  
+  .my-btn-submit {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: var(--success-color);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 25px 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .my-btn-submit:hover {
+    background-color: #08609a;
+  }
+  
+  .my-signup-link {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .my-signup-link a {
+    color: var(--success-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .my-signup-link a:hover {
+    text-decoration: underline;
+  }
+
+
+
+/* modal popup */
+
+.my-modal {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-inner {
+  width: 400px;
+  position: relative;
+  top: 20%;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  animation: modalShow 0.2s linear;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  padding-bottom: 5px;
+  background: var(--success-color);
+}
+
+.modal-header p {
+color: white;
+font-weight: bold;
+}
+
+.modal-header i {
+cursor: pointer;
+}
+
+.modal-body {
+  padding: 15px;
+  padding-bottom: 5px;
+}
+
+.modal-body p {
+color: black;
+}
+
+.modal-body h2 {
+  color: var(--success-color);
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.modal-footer {
+  padding: 15px;
+  padding-bottom: 5px;
+  text-align: right;
+}
+
+.modal-footer button {
+  padding: 10px 20px;
+  background: var(--success-color);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.my-modal-hide {
+  display: none;
+}
+
+@keyframes modalShow {
+  from {
+      top: -200p;
+      opacity: 0;
+  }
+  to {
+      top: 20%;
+      opacity: 1;
+  }
+} 
+  
+  
+  

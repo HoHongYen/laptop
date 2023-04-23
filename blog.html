@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Fashi, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="img/logo/G3 STORE_free-file (1).png" rel="shortcut icon" type="image/vnd.microsoft.icon" style="width: 20px;" />
+    <title>Blog</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4fded1aea4.js" crossorigin="anonymous"></script>
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="header-top">
+            <div class="container">
+                <div class="ht-left">
+                    <div class="mail-service">
+                        <i class=" fa fa-envelope"></i> Group3@gmail.com
+                    </div>
+                    <div class="phone-service">
+                        <i class=" fa fa-phone"></i> 0773.60.60.60
+                    </div>
+                </div>
+                <div class="ht-right">
+                    <div class="lan-selector">
+                        <select class="language_drop" name="countries" id="countries" style="width:300px;">
+                            <option value='yt' data-image="img/vn.png" data-imagecss="flag yt" data-title="VN"><span
+                                    style="color: white;">VietNam<br></span></option>
+                            <option value='yu' data-image="img/us.png" data-imagecss="flag yu" data-title="English">
+                                English</option>
+                        </select>
+                    </div>
+                    <div class="top-social">
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-mail-forward"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="inner-header">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="img/logo/G3 STORE_free-file (1).png" style="margin-left: 50%" alt=""
+                                    class="img">
+                                <!-- <b><span class="span1">G</span><span class="span2">3</span></b> -->
+                            </a>
+                        </div>
+                    </div>
+                    <!-- search begin-->
+                    <div class="col-lg-7 col-md-7">
+                        <div class="my-search-container">
+                            <div class="my-search-search">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                            </div>
+                            <div class="my-search-bigger-products">
+                                <div class="my-search-products my-search-hide">
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- search end-->
+                    <div class="col-lg-3 text-right col-md-3">
+                        <ul class="nav-right" style="display: flex;margin-left: -10px;">
+                            <li class="cart-icon">
+                                <a href="shopping-cart.html">
+                                    <button type="button" class="buttoncart"> <i class="fas fa-shopping-cart"
+                                            onclick="showCart()"></i></button>
+                                    <span id="count"></span>
+                                </a>
+                                <div class="cart-hover">
+                                    <div class="select-items">
+                                        <div id="database"> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>&nbsp;&nbsp;&nbsp;<a href="./login.html" class="login-panel login" style="font-family: cursive;"><i
+                                        class="fa fa-user" style="margin-right: 10px;"></i>Đăng nhập/</a>
+                                <a href="./register.html" class="login-panel login" style="font-family: cursive;"></i >Đăng ký</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item">
+            <div class="container">
+                <nav class="nav-menu mobile-menu">
+                    <ul>
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./shop.html">Cửa hàng</a></li>
+                        <li><a href="#">Danh mục sản phẩm</a>
+                            <ul class="dropdown">
+                                <li><a href="laptopgaming.html">Laptop gaming</a></li>
+                                <li><a href="laptopoffice.html">Laptop văn phòng</a></li>
+                                <li><a href="accessory.html">Phụ kiện</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </div>
+    </header>
+    <script src="js/search.js"></script>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <div class="breacrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <a href="#"><i class="fa fa-home"></i> Trang chủ</a>
+                        <span>Blog</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Blog Section Begin -->
+    <section class="blog-section spad" style="margin-top: -40px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1">
+                    <div class="blog-sidebar">
+                        <div class="blog-catagory">
+                            <h4>Loại</h4>
+                            <ul>
+                                <li><a href="laptopgaming.html">Laptop gaming</a></li>
+                                <li><a href="laptopoffice.html">Laptop văn phòng</a></li>
+                                <li><a href="accessory.html">Phụ kiện</a></li>
+                            </ul>
+                        </div>
+                        <div class="recent-post">
+                            <h4>Sản phẩm gần đây</h4>
+                            <div class="recent-blog">
+                                <a href="#" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="https://product.hstatic.net/1000026716/product/773y_5364964b798144f88c6137ff9a8afc60_large.png" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>Acer Nitro 5 Tiger AN515 58 773Y </h6>
+                                        <p>Laptop gaming<span><br> Ngày 30 tháng 11 năm 2022</span></p>
+                                    </div>
+                                </a>
+                                <a href="#" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="https://product.hstatic.net/1000026716/product/224vn-w10_6f9cd0624e764b5f8e27f60072e51f9f_large.png" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>ASUS TUF Dash F15 FX517ZE HN888W</h6>
+                                        <p>Laptop gaming<span><br>Ngày 30 tháng 11 năm 2022</span></p>
+                                    </div>
+                                </a>
+                                <a href="#" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="https://product.hstatic.net/1000026716/product/l1421w_2b115562199d462b82b92e89e95b2473_large.png" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>Acer Aspire 3 A315 59 381E</h6>
+                                        <p>Laptop văn phòng<span><br> Ngày 30 tháng 11 năm 2022</span></p>
+                                    </div>
+                                </a>
+                                <a href="#" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="https://product.hstatic.net/1000026716/product/gearvn-laptop-gaming-msi-gf63-thin-11ud-473vn-1_37e7f1c2bc0f48d0a2efee221faa490c_large.png" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>Laptop gaming MSI GF63 Thin 11UD 473VN</h6>
+                                        <p>Laptop gaming<span><br>Ngày 30 tháng 11 năm 2022</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 order-1 order-lg-2">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="blog-item">
+                                <div class="bi-pic">
+                                    <img  width="400" height="300" src="https://product.hstatic.net/1000026716/product/laptop_gaming_acer_nitro_5_eagle_an515_57_54mv_3e5cc4ba80be4c8595540963d469ccc3.jpg" alt="gaming">
+                                </div>
+                                <div class="bi-text">
+                                    <a href="product.html">
+                                        <h4>Laptop gaming siêu đẹp dành cho học sinh, sinh viên</h4>
+                                    </a>
+                                    <p>Laptop gaming <span><br>Ngày 30 tháng 11 năm 2022</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="blog-item">
+                                <div class="bi-pic">
+                                    <img  width="400" height="300" src="https://product.hstatic.net/1000026716/product/gearvn-laptop-lenovo-ideapad-5-pro-14iap7-82sh002uvn-1_f632593e2e9149b3af68bd5dd0a959c2_large.png" alt="laptop_vanphong">
+                                </div>
+                                <div class="bi-text">
+                                    <a href="product.html">
+                                        <h4>Laptop văn phòng thích hợp cho việc học tập và làm việc</h4>
+                                    </a>
+                                    <p>Laptop văn phòng <span><br>Ngày 30 tháng 11 năm 2022</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="blog-item">
+                                <img  width="400" height="300" src="https://product.hstatic.net/1000026716/product/oducts-akko-keycap-set-silent-pbt-double-shot-cherry-profile-177-nut-1_7f20d58dabef4914b2ae3135f7c460fe_large.jpg" alt="Phụ kiện">
+                                <div class="bi-text">
+                                    <a href="product.html">
+                                        <h4>Bàn phím cơ cao cấp</h4>
+                                    </a>
+                                    <p>Phụ kiện <span><br>Ngày 30 tháng 11 năm 2022</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="blog-item">
+                                <div class="bi-pic">
+                                    <img  width="400" height="300" src="https://product.hstatic.net/1000026716/product/1_7b85144b6936463093980dd9deda5bd7_large.jpg" alt="Phụ kiện">
+                                </div>
+                                <div class="bi-text">
+                                    <a href="product.html">
+                                        <h4>Ba lô cao cấp dành cho cho học sinh, sinh viên</h4>
+                                    </a>
+                                    <p>Phụ kiện <span><br>Ngày 30 tháng 11 năm 2022</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+       <!-- Promotion announcement start -->
+       <div class="social-panel-container" style="position: fixed; z-index: 1000;">
+        <div class="social-panel">
+            <p><i class="fa fa-heart" style="color: red; padding-top: 8px;"></i>Khuyến mãi siêu khủng <i class="fa fa-heart" style="color: red;"></i></p>
+            <button class=" close-btn " style="margin-right: 15px; background-color: transparent"><i class="fas fa-times " style="color:orangered;"></i></button>
+            <h4 style="margin-top: 20px;">Siêu giảm giá ngày 9 tháng 12 năm 2022</h4>
+            <div style="display: flex;">
+                <div class="blog-sidebar">
+                    <div class="recent-post">
+                        <div class="recent-blog">
+                            <a href="#" class="rb-item">
+                                <div class="rb-pic">
+                                    <img src="https://product.hstatic.net/1000026716/product/l1421w_2b115562199d462b82b92e89e95b2473_large.png" alt="">                                </div>
+                                <div class="rb-text">
+                                    <h5>Acer Aspire 3 A315 59 381E &nbsp;&nbsp; </h5>
+                                    <h6>Giảm còn &nbsp;&nbsp; </h6>
+                                    <div class="product-price" style="margin-top: -10px;">
+                                        14.000.000
+                                        <span style="text-decoration: line-through;">15.999.000</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="rb-item">
+                                <div class="rb-pic">
+                                    <img src="https://product.hstatic.net/1000026716/product/224vn-w10_6f9cd0624e764b5f8e27f60072e51f9f_large.png" alt="">                                </div>
+                                <div class="rb-text">
+                                    <h5>ASUS TUF Dash F15 FX517ZE HN888W</h5>
+                                    <h6>Giảm còn &nbsp;&nbsp; </h6>
+                                    <div class="product-price" style="margin-top: -10px;">
+                                        17.000.000
+                                        <span style="text-decoration: line-through;">19.199.000</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-sidebar">
+                    <div class="recent-post">
+                        <div class="recent-blog">
+                            <div style="display: flex;">
+                                <h6 class="km">Miễn phí vận chuyển</h6>
+                                <h6 class="km1"><span class="spankm1">Đơn hàng đầu tiên:</span>
+                                    <br>
+                                    <span class="spankm">Dark skin: 100K & 200K </span>
+                                    <br> <span class="spankm2">Có hiệu lực từ ngày 30.11</span>
+                                    <button class="buttonkm" onclick="km()">Lưu</button>
+                                </h6>
+                            </div>
+                            <br>
+                            <div style="display: flex;">
+                                <h6 class="km" style="padding-top: 25px;">Voucher</h6>
+                                <h6 class="km1"><span class="spankm1">Giảm 300K:</span>
+                                    <br>
+                                    <span class="spankm">Một khách hàng mới</span>
+                                    <br> <span class="spankm2">Có hiệu lực từ ngày 30.11</span>
+                                    <button class="buttonkm" onclick="km()">Lưu</button>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="https://www.patreon.com/florinpop17 " target="_blank ">
+                        <i class="fab fa-discord "></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/florinpop1705 " target="_blank ">
+                        <i class="fab fa-twitter "></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/florinpop17 " target="_blank ">
+                        <i class="fab fa-linkedin "></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com/florinpop17 " target="_blank ">
+                        <i class="fab fa-facebook "></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/florinpop17 " target="_blank ">
+                        <i class="fab fa-instagram "></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button class="floating-btn ">
+        Siêu giảm giá ngày 9 tháng 12 năm 2022
+    </button>
+    <script>
+        // Promotion announcement JS
+        const floating_btn = document.querySelector('.floating-btn');
+        const close_btn = document.querySelector('.close-btn');
+        const social_panel_container = document.querySelector('.social-panel-container');
+
+        floating_btn.addEventListener('click', () => {
+            social_panel_container.classList.toggle('visible')
+        });
+
+        close_btn.addEventListener('click', () => {
+            social_panel_container.classList.remove('visible')
+        });
+    </script>
+    <!-- Promotion announcement end -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section" style="margin-top: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <img src="img/logo/G3 STORE_free-file (1).png" alt="" style="width: 120px;">
+                            <!-- <b><span class="span1">G</span><span class="span2">3</span></b> -->
+                        </div>
+                        <ul>
+                            <li>Địa chỉ: 3/2, Xuân Khánh, Ninh Kiều, TP.Cần Thơ</li>
+                            <li>Số điện thoại: 0773.60.60.60</li>
+                            <li>Email: Group3@gmail.com</li>
+                        </ul>
+                        <div class="footer-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 offset-lg-1">
+                    <div class="footer-widget">
+                        <h5 style="font-style:italic">Thông tin</h5>
+                        <ul>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="shop.html">Cửa hàng</a></li>
+                            <li><a href="#">Danh mục sản phẩm</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-1 offset-lg-1">
+                </div>
+                <div class="col-lg-4">
+                    <div class="newslatter-item">
+                        <h5 style="font-style:italic">Tham gia bản tin của chúng tôi ngay bây giờ</h5>
+                        <p>Nhận thông tin cập nhật qua Email về cửa hàng mới nhất của chúng tôi và các ưu đãi đặc biệt.</p>
+                        <form action="#" class="subscribe-form">
+                            <input type="text" placeholder="Nhập thư của bạn" style="border-radius: 50px;">
+                            <button type="button" onclick="location.href='shop.html'" style="font-style: italic; border-radius: 0px 50px 50px 0px;">Đặt mua</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-reserved">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text">
+                            <!--start getdate tody-->&copy &nbsp; Copyright
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | Made by <i class="fa fa-heart-o" aria-hidden="true"></i> &nbsp;Group3&nbsp;<i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <!--end getdate tody -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/jquery.dd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/shopping-cart.js"></script>
+    <script>
+        window.onstorage = () => {
+            showCart();
+        };
+        showCart();
+    </script>
+</body>
+
+</html>
