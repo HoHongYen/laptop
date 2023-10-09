@@ -5,7 +5,7 @@ Tên website: G3 Store.
 
 Bài tập nhóm môn Nhập môn lập trình Web (CT188).
 
-Link: https://hong-yen.github.io/laptop/
+Link: https://hohongyen.github.io/laptop/
 
 
 
